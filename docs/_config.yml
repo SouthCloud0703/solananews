@@ -1,0 +1,27 @@
+title: "Solana Japan - マーケットデータ & ニュース"
+description: "Solanaのマーケットデータとニュースを日本語でキュレーション"
+url: "https://yutaro.github.io"
+baseurl: "/news"
+
+# GitHub Pages settings
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Exclude files
+exclude:
+  - src/
+  - node_modules/
+  - package.json
+  - tsconfig.json
+  - README.md
+
+# Include files
+include:
+  - _pages

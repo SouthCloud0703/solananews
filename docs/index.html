@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Japan - マーケットデータ & ニュース</title>
+    <meta name="description" content="Solanaのマーケットデータとニュースを日本語でキュレーション">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">◎</span>
+                    Solana Japan
+                </h1>
+                <nav class="nav">
+                    <a href="#market" class="nav-link">マーケット</a>
+                    <a href="#news" class="nav-link">ニュース</a>
+                    <a href="#defi" class="nav-link">DeFi</a>
+                    <a href="#analytics" class="nav-link">分析</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Solanaエコシステムの最新情報</h2>
+                <p class="hero-subtitle">日本語でキュレーションされたマーケットデータとニュース</p>
+            </div>
+        </section>
+
+        <section id="market" class="market-section">
+            <div class="container">
+                <h2 class="section-title">マーケット概要</h2>
+                <div class="market-grid">
+                    <div class="market-card sol-price">
+                        <h3>SOL価格</h3>
+                        <div class="price-display">
+                            <span class="price" id="sol-price">--</span>
+                            <span class="currency">USD</span>
+                        </div>
+                        <div class="price-change" id="sol-change">--</div>
+                    </div>
+                    <div class="market-card market-cap">
+                        <h3>時価総額</h3>
+                        <div class="stat-value" id="market-cap">--</div>
+                    </div>
+                    <div class="market-card volume">
+                        <h3>24h取引量</h3>
+                        <div class="stat-value" id="volume">--</div>
+                    </div>
+                    <div class="market-card tps">
+                        <h3>TPS</h3>
+                        <div class="stat-value" id="tps">--</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news-section">
+            <div class="container">
+                <h2 class="section-title">最新ニュース</h2>
+                <div class="news-grid" id="news-grid">
+                    <!-- ニュース記事はJavaScriptで動的に読み込み -->
+                </div>
+            </div>
+        </section>
+
+        <section id="defi" class="defi-section">
+            <div class="container">
+                <h2 class="section-title">DeFiプロトコル</h2>
+                <div class="defi-grid" id="defi-grid">
+                    <!-- DeFiデータはJavaScriptで動的に読み込み -->
+                </div>
+            </div>
+        </section>
+
+        <section id="analytics" class="analytics-section">
+            <div class="container">
+                <h2 class="section-title">ネットワーク分析</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>バリデーター数</h3>
+                        <div class="stat-value" id="validator-count">--</div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>総アカウント数</h3>
+                        <div class="stat-value" id="total-accounts">--</div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>平均ブロック時間</h3>
+                        <div class="stat-value" id="block-time">--</div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>ステーク量</h3>
+                        <div class="stat-value" id="stake-amount">--</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Solana Japan. データは教育目的のみ</p>
+        </div>
+    </footer>
+
+    <script src="data/mock-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
